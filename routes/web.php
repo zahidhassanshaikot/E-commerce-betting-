@@ -4,10 +4,7 @@ route::get('/',[
     'as'=>'/'
 ]);
 
-route::get('/female-product',[
-    'uses'=>'NewShopController@femaleProduct',
-    'as'=>'/female-product'
-]);
+
 route::get('/category-product/{id}',[
     'uses'=>'NewShopController@categoryProduct',
     'as'=>'category-product'
@@ -16,16 +13,6 @@ route::get('/brand-product/{id}',[
     'uses'=>'NewShopController@brandProduct',
     'as'=>'brand-product'
 ]);
-route::get('/male-product',[
-    'uses'=>'NewShopController@maleProduct',
-    'as'=>'/male-product'
-]);
-
-route::get('/code',[
-    'uses'=>'NewShopController@code',
-    'as'=>'code'
-]);
-
 
 route::get('/mail-us',[
     'uses'=>'NewShopController@mailUs',
@@ -37,28 +24,28 @@ route::get('/single-product/{id}',[
     'as'=>'single-product'
 ]);
 
-Route::get('/checkout', [
-    'uses'  =>  'CheckoutController@index',
-    'as'    =>  'checkout'
+Route::get('/create/account', [
+    'uses'  =>  'NewShopController@reg',
+    'as'    =>  'create-account'
 ]);
 
-Route::post('/shipping/save', [
-    'uses'  =>  'CheckoutController@saveShippingInfo',
-    'as'    =>  'new-shipping'
-]);
-Route::get('/checkout/payment', [
-    'uses'  =>  'CheckoutController@paymentForm',
-    'as'    =>  'checkout-payment'
-]);
-Route::post('/checkout/order', [
-    'uses'  =>  'CheckoutController@newOrder',
-    'as'    =>  'new-order'
-]);
+// Route::post('/shipping/save', [
+//     'uses'  =>  'CheckoutController@saveShippingInfo',
+//     'as'    =>  'new-shipping'
+// ]);
+// Route::get('/checkout/payment', [
+//     'uses'  =>  'CheckoutController@paymentForm',
+//     'as'    =>  'checkout-payment'
+// ]);
+// Route::post('/checkout/order', [
+//     'uses'  =>  'CheckoutController@newOrder',
+//     'as'    =>  'new-order'
+// ]);
 
-Route::get('/complete/order', [
-    'uses'  =>  'CheckoutController@completeOrder',
-    'as'    =>  'complete-order'
-]);
+// Route::get('/complete/order', [
+//     'uses'  =>  'CheckoutController@completeOrder',
+//     'as'    =>  'complete-order'
+// ]);
 
 
 

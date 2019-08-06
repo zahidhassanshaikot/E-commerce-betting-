@@ -15,9 +15,9 @@
             <div class="col-md-3 footer-grid">
                 <h4>My Account</h4>
                 <ul>
-                    <li><a href="{{ route('checkout') }}">Checkout</a></li>
+                    {{-- <li><a href="{{ route('create-account') }}">Checkout</a></li> --}}
                     <li><a href="{{ route('user/login') }}">Login</a></li>
-                    <li><a href="registered.html"> Create Account </a></li>
+                    <li><a href="{{ route('create-account') }}"> Create Account </a></li>
                 </ul>
             </div>
             <div class="col-md-3 footer-grid">
@@ -26,12 +26,8 @@
                 @foreach($brands as $brand)
                     <li><a href="{{ route('brand-product', ['id'=>$brand->id]) }}">{{ $brand->brand_name }}</a></li>
                     @endforeach
-                    {{--<li><a href="{{ route('/') }}">Home</a></li>--}}
-                    {{--<li><a href="{{route('/female-product')}}">Products</a></li>--}}
-                    {{--<li><a href="{{ route('code') }}">Short Codes</a></li>--}}
-                    {{--<li><a href="{{ route('mail-us') }}">Mail Us</a></li>--}}
-                    {{--<li><a href="{{route('/female-product')}}">products1</a></li>--}}
-                {{--</ul>--}}
+                
+                </ul>
             </div>
             <div class="col-md-3 footer-grid foot">
                 <h4>Contacts</h4>
@@ -52,7 +48,7 @@
 <div class="copy-section">
     <div class="container">
         <div class="copy-left">
-            <p>&copy; 2016 New Shop . All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+            <p>&copy; 2019 New Shop </p>
         </div>
         <div class="copy-right">
             <img src="{{asset('/')}}/front-end/images/card.png" alt=""/>

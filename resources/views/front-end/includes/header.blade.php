@@ -10,7 +10,7 @@
                     {{-- <li><a href="{{ route('checkout') }}">Checkout</a></li> --}}
                     <li><a href="{{ route('mail-us') }}">Mail Us</a></li>
                     <li><a href="{{ route('user/login') }}">Login</a></li>
-                    <li><a href="{{ route('checkout') }}"> Create Account </a></li>
+                    <li><a href="{{ route('create-account') }}"> Create Account </a></li>
                 </ul>
             </div>
             <div class="clearfix"></div>
